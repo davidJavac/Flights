@@ -1,8 +1,8 @@
 import React from 'react';
+import '../css/style_card.css'
 import FormatTime from './FormatTime.js';
-import './style_card.css'
 
-class FlightCard extends React.Component{
+class VueloInbound extends React.Component{
 
     constructor(props){
         super(props);
@@ -22,10 +22,7 @@ class FlightCard extends React.Component{
                         {hora_salida.toDateString()}
                     </div>
                     <div>
-                        <div>
-                            <img src = {require('./airport_origin.png')}  height = '30px' width = '30px'></img>
-                            <span>${this.props.price}</span>
-                        </div>
+                        <img src = {require('../images/airport_origin.png')}  height = '30px' width = '30px'></img>
                         {this.props.codeOrigin + " - " + this.props.origin + "  "}
                         <FormatTime hora = {this.props.departureDate}></FormatTime>
 
@@ -47,4 +44,4 @@ class FlightCard extends React.Component{
 
 }
 
-export default FlightCard;
+export default VueloInbound;

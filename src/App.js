@@ -1,10 +1,6 @@
 import React from 'react';
-import {Router, Route, Switch, Link} from 'react-router-dom';
-import {Button} from 'react-bootstrap';
 import Search from './search';
-import history from './history';
-
-
+import './css/home.css';
 
 class App extends React.Component {
   
@@ -19,9 +15,12 @@ class App extends React.Component {
     return (
         <>
           <div id = 'container'>
-            <div>
-              <h1>Home Page</h1>    
-              <h2>Promotions</h2>
+            <div class = 'container_banner'>
+              <img src={require("./images/banner_plane.jpg")} alt= 'avion' class = 'banner'/>
+              <div class = 'centered'>
+                <h1>Home Page</h1>    
+                <h2>Promotions</h2>
+              </div>
             </div>
             <div>
               <Search></Search>      

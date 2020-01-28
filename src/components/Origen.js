@@ -1,5 +1,5 @@
 import React from 'react';
-import './style_card.css'
+import '../css/style_card.css'
 
 class Origen extends React.Component{
 
@@ -13,7 +13,7 @@ class Origen extends React.Component{
         return(
                 
             <div onClick = {this.props.onClick} class = 'card'>
-                <p><img src = {require('./airport_origin.png')}  height = '30px' width = '30px'></img>{this.props.code + " - " + this.props.location}</p>
+                <p><img src = {require('../images/airport_origin.png')}  height = '30px' width = '30px'></img>{this.props.code + " - " + this.props.location}</p>
                 
             </div>
                     

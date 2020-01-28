@@ -1,5 +1,5 @@
 import React from 'react';
-import './flight.css';
+import '../css/flight.css';
 import ListaVuelosOutbound from './ListaVuelosOutbound';
 import ListaVuelosInbound from './ListaVuelosInbound';
 

@@ -1,13 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
 import {Button} from 'react-bootstrap';
-import ListaDestinos from './ListaDestinos.js';
-import ListaOrigen from './ListaOrigen.js';
-import Flights from './flights.js';
-import PropTypes from "prop-types";
+import ListaDestinos from './components/ListaDestinos.js';
+import ListaOrigen from './components/ListaOrigen.js';
+import Flights from './components/flights.js';
 import routes from './routes.json';
 import epa_cor from './epa-cor.json';
 import epa_mdz from './epa-mdz.json';
-import './search.css';
+import './css/search.css';
 
 
 const Search = () => {
@@ -112,7 +111,7 @@ const Search = () => {
       
         <>
             <div>
-                <Button variant = 'primary' size= 'sm' onClick = {() => search()}>Search</Button>
+                <Button variant = 'primary' size= 'sm' onClick = {() => search()}>Nueva busqueda</Button>
             </div>
             <Flights arr = {arr_flight.current} dict = {dict_code_city.current}></Flights>
         </>
@@ -146,10 +145,10 @@ const Search = () => {
           </div>
           <div class = 'descripcion'>
             <div class = 'content'>
-                <Button variant = 'primary' size= 'sm' onClick = {() => search()}>Search</Button>
+                <Button variant = 'primary' size= 'sm' onClick = {() => search()}>Nueva busqueda</Button>
             </div>
             <div class = 'content'>
-              <Button variant = 'success' size = 'sm' onClick = {() => setSelectFlight()}>Flights</Button>
+              <Button variant = 'success' size = 'sm' onClick = {() => setSelectFlight()}>Vuelos disponibles</Button>
             </div>
           </div>
           <div>

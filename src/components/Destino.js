@@ -1,5 +1,5 @@
 import React from 'react';
-import './style_card.css';
+import '../css/style_card.css';
 
 class Destino extends React.Component{
 
@@ -22,7 +22,7 @@ class Destino extends React.Component{
         return(
                 
             <div tabindex="-1" onClick = {this.props.onClick} class = 'card'>
-                <p ><img class = 'imagen' src = {require('./airport_destino.png')}  height = '30px' width = '30px'></img>
+                <p ><img class = 'imagen' src = {require('../images/airport_destino.png')}  height = '30px' width = '30px'></img>
                 {this.props.code + " - " + this.props.location}</p>
             </div>
             
